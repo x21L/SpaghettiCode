@@ -7,4 +7,4 @@ Implement methods and make it as abstract as possible, with the things we have a
 
 >**NOTE:** In the image folder you can find a cheatsheet of various geometric figures.
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![spaghetti meme](https://github.com/x21L/SpaghettiCode/blob/master/images/meme.jpeg)
