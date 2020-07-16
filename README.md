@@ -1,4 +1,4 @@
-# SpaghettiCode
+# Spaghetti Code
 
 You had a trainee in your company. He wrotes a program which calculates geometric figures like squares. Unfortuneataly he wrote really bad spagehtti code.
 Now it is your task to make this code cleaner.
