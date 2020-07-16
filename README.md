@@ -6,4 +6,4 @@ Implement methods and make it as abstract as possible, with the things we have a
 
 >**NOTE:** In the image folder, you can find a cheat sheet of various geometric figures.
 
-![spaghetti meme](https://github.com/x21L/SpaghettiCode/blob/master/images/meme.jpeg)
+<div style="text-align:center"><img src="https://github.com/x21L/SpaghettiCode/blob/master/images/meme.jpeg" /></div>
