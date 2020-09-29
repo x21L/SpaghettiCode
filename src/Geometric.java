@@ -1,62 +1,57 @@
-public class Geometric {
+public class Geometrics {
+    private static double x = 10.0;
+    private static double y = 5.0;
+    private static double z = 3.0;
+    private static int x1 = 8;
+    private static int y1 = 7;
+    private static int z1 = 10;
+    private static int x2 = 100;
+    private static int y2 = 57;
+    private static int z2 = 129;
+    private static int x3 = 45;
+    private static int y3 = 89;
+    private static int z3 = 69;
 
     public static void main(String[] args) {
-        System.out.println("=== Square ===");
-        System.out.println("Area");
-        System.out.println(squareArea(10.0));
-        System.out.println(squareArea(20.0));
-        System.out.println("Perimeter");
-        System.out.println(squarePerimeter(100.0));
-        System.out.println(squarePerimeter(4.123));
-        System.out.println();
-        System.out.println("=== Rectangle ===");
-        System.out.println("Area");
-        System.out.println(rectangleArea(1.0, 4.0));
-        System.out.println(rectangleArea(7.0, 9.0));
-        System.out.println("Perimeter");
-        System.out.println(rectanglePerimeter(190.56, 345.7));
-        System.out.println();
-        System.out.println("=== Volumes ===");
+        // area ... Fläche
+        System.out.println("Square area");
+        System.out.println("x * x = " + x * x);
+        System.out.println("x1 * x1 = " + x1 * x1);
+        System.out.println("x2 * x2 = " + x2 * x2);
+        System.out.println("y * y = " + y * y);
+
+        // perimeter ... Umfang
+        System.out.println("Square perimeter");
+        System.out.println("4 * x = " + 4 * x);
+        System.out.println("4 * x1 = " + 4 * x1);
+        System.out.println("4 * x2 = " + 4 * x2);
+        System.out.println("4 * y = " + 4 * y);
+
+        System.out.println("Rectangle area");
+        System.out.println("x * y = " + x * y);
+        System.out.println("x1 * y1 = " + x1 * y1);
+        System.out.println("x2 * y2 = " + x2 * y2);
+        System.out.println("x3 * y3 = " + x3 * y3);
+
+        System.out.println("Rectangle perimeter");
+        System.out.println("x + y = " + x + y);
+        System.out.println("x1 + y1 = " + x1 + y1);
+        System.out.println("x2 + y2 = " + x2 + y2);
+        System.out.println("x3 + y3 = " + x3 + y3);
+
+        System.out.println("We can also calculate some volumes");
+        /*
+            z is our height
+            y is our radius
+         */
         System.out.println("Zone of a sphere");
-        System.out.println(zoneSphere(12.0, 45.0, 95.934));
-        System.out.println("Cylindrical sphere");
-        System.out.println(cylinderSphere(66.66));
+        double v = (Math.PI * z * (3 * Math.pow(y, 2) + 3 * Math.pow(x, 2) + Math.pow(z, 2))) / 6;
+        System.out.println(v);
+
+        System.out.println("Sphere with cylinder");
+        System.out.println(Math.PI * Math.pow(z, 3) / 6);
+
         System.out.println("Ungula");
-        System.out.println(ungula(1.0, 3.0));
-    }
-
-    private static double squareArea(double x) {
-        System.out.println("x = " + x);
-        return x * x;
-    }
-
-    private static double squarePerimeter(double x) {
-        System.out.println("x = " + x);
-        return 4 * x;
-    }
-
-    private static double rectangleArea(double x, double y) {
-        System.out.println("x = " + x + " y = " + y);
-        return x * y;
-    }
-
-    private static double rectanglePerimeter(double x, double y) {
-        System.out.println("x = " + x + " y = " + y);
-        return 2 * (x + y);
-    }
-
-    private static double zoneSphere(double x, double y, double z) {
-        System.out.println("x = " + x + " y = " + y + " z = " + z);
-       return (Math.PI * z * (3 * Math.pow(y, 2) + 3 * Math.pow(x, 2) + Math.pow(z, 2))) / 6;
-    }
-
-    private static double cylinderSphere(double r) {
-        System.out.println("r = " + r);
-        return (Math.PI * Math.pow(r, 3)) / 6;
-    }
-
-    private static double ungula(double x, double y) {
-        System.out.println("x = " + x + " y = " + y);
-        return (2 * x * y) / 3;
+        System.out.println((double) (2 * x3 * z3) / 3);
     }
 }
