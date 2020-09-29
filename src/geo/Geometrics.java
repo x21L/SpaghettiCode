@@ -1,3 +1,4 @@
+package geo;
 public class Geometrics {
     private static double x = 10.0;
     private static double y = 5.0;
